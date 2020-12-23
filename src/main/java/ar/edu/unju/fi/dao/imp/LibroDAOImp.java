@@ -24,5 +24,24 @@ public class LibroDAOImp implements ILibroDAO {
 
         manager.close();
     }
+
+    @Override
+    public Libro findById(Long id) {
+        EntityManager manager = emf.createEntityManager();
+
+       Libro libro = (Libro) manager.find(Libro.class, id);
+
+        manager.close();
+
+        if (libro == null) {
+
+            return null;
+            
+        } else {
+            
+        
+        return libro;
+    }
+    }
     
 }

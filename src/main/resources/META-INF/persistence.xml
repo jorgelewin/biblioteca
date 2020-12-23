@@ -27,7 +27,7 @@ denominará biblioteca, básicamente es también el nombre de la BD-->
         los de la base de datos H"-->
         <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
         <!-- Esta política permite indicar como se generan las tablas del modelo de objetos-->
-        <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+        <property name="hibernate.hbm2ddl.auto" value="update" />
         <!-- Visualizar las Sentencias SQL-->
         <property name="show_sql" value="true" />
     </properties>
